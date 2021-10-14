@@ -1,0 +1,19 @@
+logging:
+  level:
+    org.anyu.api.test: debug
+
+spring:
+  application:
+    name: task
+  #  数据源配置
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.17.0.1:3306/api-base?tinyInt1isBit=false&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+
+mybatis-plus:
+  #  configuration:
+  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-enums-package: org.anyu.api.task.common
